@@ -1,0 +1,1 @@
+# plugins-woocommerce-auto-added-coupons
