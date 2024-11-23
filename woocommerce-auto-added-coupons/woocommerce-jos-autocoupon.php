@@ -3,12 +3,12 @@
  * Plugin Name: WooCommerce Extended Coupon Features FREE
  * Plugin URI: http://www.soft79.nl
  * Description: Additional functionality for WooCommerce Coupons.
- * Version: 3.3.3
+ * Version: 3.3.8
  * Text Domain: woocommerce-jos-autocoupon
  * Author: Soft79
  * License: GPL2
  * WC requires at least: 5.0.0
- * WC tested up to: 7.4.1
+ * WC tested up to: 9.4.2
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 if ( ! defined( 'WJECF_VERSION' ) ) {
-	define( 'WJECF_VERSION', '3.3.3' );
+	define( 'WJECF_VERSION', '3.3.8' );
 }
 
 // NOTE: This file must be compatible with old PHP versions. All other files can be PHP 5.6+ .
@@ -31,12 +31,12 @@ if ( ! function_exists( 'wjecf_load_plugin_textdomain' ) ) {
 		load_plugin_textdomain( 'woocommerce-jos-autocoupon', false, basename( dirname( __FILE__ ) ) . '/languages/' );
 	}
 
+	add_action( 'init', 'wjecf_load_plugin_textdomain', 10 );
+
 	// The plugins_loaded action hook fires early,
 	// it precedes the setup_theme, after_setup_theme, init and wp_loaded action hooks.
 	add_action( 'plugins_loaded', 'wjecf_action_plugins_loaded' );
 	function wjecf_action_plugins_loaded() {
-		wjecf_load_plugin_textdomain();
-
 		try {
 			$requirements = array(
 				array(

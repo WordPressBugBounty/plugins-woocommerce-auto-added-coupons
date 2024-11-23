@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://www.soft79.nl/usage-limits/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Additional usage limits - Soft79 Documentation</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../css/jos.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Additional usage limits";
+        var mkdocs_page_input_path = "usage-limits.md";
+        var mkdocs_page_url = "/usage-limits/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Soft79 Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">WooCommerce Extended Coupon Features</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="..">About</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Edit coupons</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../usage-restrictions/">Additional usage restrictions</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Additional usage limits</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#limit-discount-to-pro">Limit discount to (PRO)</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#one-item-per-order-line">One item per order line</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#lowest-priced-product-single-item">Lowest priced product (single item)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#lowest-priced-order-line-all-items">Lowest priced order line (all items)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#every-nth-item">Every nth item</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#nth-item-onwards">Nth item onwards</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#n-lowest-priced-products">n Lowest priced products.</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../usage-free-products/">Free products</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../usage-checkout/">Checkout</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../usage-misc/">Miscellaneous</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../auto-updates/">Automatic updates (PRO)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../development/">Development</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Soft79 Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">WooCommerce Extended Coupon Features</li>
+          <li class="breadcrumb-item">Edit coupons</li>
+      <li class="breadcrumb-item active">Additional usage limits</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="additional-usage-limits">Additional usage limits</h1>
+<p>The following option is added to the <em>Usage limits</em>-tab:</p>
+<h2 id="limit-discount-to-pro">Limit discount to (PRO)</h2>
+<p><img alt="Usage restriction-tab" src="../img/be_tab_usage_limits_limit_discount_to.png" /></p>
+<p>Easily control which items are eligible for discounts.
+By combining this feature with a 100% discount coupon, you can create flexible "Buy X, Pay Y" rules.
+For example, using the "Limit discount to every nth item" setting along with a "minimum matching quantity of products" set to 3, allows you to offer a discount where every 3rd item in the cart is free.</p>
+<p>Developers can program additional discount limiting rules by using the <code>wjecf_get_limit_to_options</code>-filter.</p>
+<h3 id="one-item-per-order-line">One item per order line</h3>
+<p>Applies the discount to a maximum of one item per order line.</p>
+<h3 id="lowest-priced-product-single-item">Lowest priced product (single item)</h3>
+<p>Applies the discount only to the lowest-priced matching product.</p>
+<h3 id="lowest-priced-order-line-all-items">Lowest priced order line (all items)</h3>
+<p>Applies the discount to the lowest-priced order line.</p>
+<h3 id="every-nth-item">Every nth item</h3>
+<p>Applies the discount to every <em>n</em>th item in the cart.
+Note: <em>n</em> is the minimum quantity of matching products set in the Usage Restrictions tab (or defaults to 2 if not specified).</p>
+<h3 id="nth-item-onwards">Nth item onwards</h3>
+<p>Applies the discount starting from the nth item in the cart and for all subsequent items.</p>
+<h3 id="n-lowest-priced-products">n Lowest priced products.</h3>
+<p>Discounts the <em>n</em> lowest-priced products in the cart.
+Note: <em>n</em> is determined by how many times the coupon applies, based on either the subtotal or the quantity of matching products.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../usage-restrictions/" class="btn btn-neutral float-left" title="Additional usage restrictions"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../usage-free-products/" class="btn btn-neutral float-right" title="Free products">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../usage-restrictions/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../usage-free-products/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

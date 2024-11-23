@@ -3,8 +3,8 @@ Contributors: josk79
 Tags: woocommerce, coupons, discount
 Requires at least: 5.0
 Requires PHP: 7.0
-Tested up to: 6.1.1
-Stable tag: 3.3.3
+Tested up to: 6.7.1
+Stable tag: 3.3.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -101,8 +101,29 @@ On the settings page (Settings > WooCommerce Extended Coupon Features) check the
 
 == Changelog ==
 
+= 3.3.8 =
+*Release Date - 2024-11-23*
+- FIX: Loading of translations too early
+
+= 3.3.7 =
+*Release Date - 2024-10-17*
+- (PRO) FIX: Coupon queueing incompatibility with WooCommerce Blocks
+
+= 3.3.6 =
+*Release Date - 2024-10-06*
+- Update documentation
+
+= 3.3.5 =
+*Release Date - 2024-05-14*
+- (PRO) FIX: Custom field AND comparison
+
+= 3.3.4 =
+*Release Date - 2023-11-05*
+- (PRO) FEATURE: Limit discount to: Nth item onwards
+- (PRO) FEATURE: Custom meta: include attribute_pa_* fields
+
 = 3.3.3 =
-*Release Data - 2023-03-11*
+*Release Date - 2023-03-11*
 - Introduce filter wjecf_coupon_item_quantity to override matching item quantity
 - HPOS compatibility
 - FIX: Don't let WooCommerce Subscriptions plugin remove autocoupons when calculating on a different cart
