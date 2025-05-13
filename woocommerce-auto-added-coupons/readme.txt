@@ -4,7 +4,7 @@ Tags: woocommerce, coupons, discount
 Requires at least: 5.0
 Requires PHP: 7.0
 Tested up to: 6.7.1
-Stable tag: 3.3.8
+Stable tag: 3.3.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -100,6 +100,10 @@ On the settings page (Settings > WooCommerce Extended Coupon Features) check the
 4. Additional restrictions based on shipping or payment method or the customer
 
 == Changelog ==
+
+= 3.3.9 =
+*Release Date - 2025-05-13*
+- FIX: Loading of translations of plugins too early
 
 = 3.3.8 =
 *Release Date - 2024-11-23*

@@ -51,10 +51,6 @@ class WJECF_Controller {
 	}
 
 	public function start() {
-		add_action( 'init', array( $this, 'init' ) );
-	}
-
-	public function init() {
 		$this->init_plugins();
 		$this->init_hooks();
 	}
