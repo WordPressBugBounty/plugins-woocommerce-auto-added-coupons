@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WooCommerce Extended Coupon Features 2.00\n"
+"Project-Id-Version: Extended Coupon Features for WooCommerce 2.00\n"
 "POT-Creation-Date: 2020-05-01 13:55+0000\n"
 "PO-Revision-Date: 2021-03-23 19:29+0100\n"
 "Language-Team: Jos Koenis\n"
@@ -102,10 +102,10 @@ msgstr "Tout client"
 #: includes/abstract-wjecf-plugin.php:58
 #, php-format
 msgid ""
-"WooCommerce Extended Coupon Features version %1$s is required. You have "
+"Extended Coupon Features for WooCommerce version %1$s is required. You have "
 "version %2$s"
 msgstr ""
-"Une nouvelle version de WooCommerce Extended Coupon Features <strong>%s</"
+"Une nouvelle version de Extended Coupon Features for WooCommerce <strong>%s</"
 "strong> est disponible  Vous avez la version %s installée"
 
 #: pro/class-wjecf-pro-controller.php:155
@@ -288,8 +288,8 @@ msgid "Discount applied: %s"
 msgstr "Remise appliquée : %s"
 
 #: includes/plugins/WJECF_Debug.php:18
-msgid "Debugging methods for WooCommerce Extended Coupon Features."
-msgstr "Mode débuguage pour WooCommerce Extended Coupon Features."
+msgid "Debugging methods for Extended Coupon Features for WooCommerce."
+msgstr "Mode débuguage pour Extended Coupon Features for WooCommerce."
 
 #: includes/plugins/WJECF_Debug.php:39
 msgid "Debug mode is enabled. Please disable it when you're done debugging."
@@ -321,19 +321,19 @@ msgid ""
 "Please note, you're using an older version of this plugin, while the data "
 "was upgraded to a newer version."
 msgstr ""
-"<strong>WooCommerce Extended Coupon Features:</strong> Veuillez noter que "
+"<strong>Extended Coupon Features for WooCommerce:</strong> Veuillez noter que "
 "vous utilisez une ancienne version de ce plugin, alors que les données ont "
 "été mises à jour vers une version plus récente."
 
 #: includes/plugins/WJECF_Admin_Data_Update.php:127
 msgid "Data succesfully upgraded to the newest version."
 msgstr ""
-"<strong>WooCommerce Extended Coupon Features :</strong> Les données ont été "
+"<strong>Extended Coupon Features for WooCommerce :</strong> Les données ont été "
 "mises à jour avec succès vers la nouvelle version."
 
 #: includes/plugins/WJECF_Admin_Settings.php:13
-msgid "Settings page of WooCommerce Extended Coupon Features."
-msgstr "Page des Réglages de WooCommerce Extended Coupon Features."
+msgid "Settings page of Extended Coupon Features for WooCommerce."
+msgstr "Page des Réglages de Extended Coupon Features for WooCommerce."
 
 #: includes/plugins/WJECF_Admin_Settings.php:34
 #, php-format
@@ -347,8 +347,8 @@ msgstr ""
 #: includes/plugins/WJECF_Admin_Settings.php:41
 #: includes/plugins/WJECF_Admin_Settings.php:42
 #: includes/plugins/WJECF_Admin_Settings.php:51
-msgid "WooCommerce Extended Coupon Features"
-msgstr "WooCommerce Extended Coupon Features"
+msgid "Extended Coupon Features for WooCommerce"
+msgstr "Extended Coupon Features for WooCommerce"
 
 #: includes/plugins/WJECF_Admin_Settings.php:72
 msgid "Advanced settings"
@@ -379,8 +379,8 @@ msgstr ""
 "Le journal peut être trouvé <a href=\"%s\">ici</a>."
 
 #: includes/plugins/WJECF_Admin.php:13
-msgid "Admin interface of WooCommerce Extended Coupon Features."
-msgstr "Interface  d'Administration de WooCommerce Extended Coupon Features."
+msgid "Admin interface of Extended Coupon Features for WooCommerce."
+msgstr "Interface  d'Administration de Extended Coupon Features for WooCommerce."
 
 #: includes/plugins/WJECF_Admin.php:106
 msgid "(AND)"
@@ -399,8 +399,8 @@ msgid "Miscellaneous"
 msgstr "Divers"
 
 #: includes/plugins/WJECF_Admin.php:158
-msgid "Do you like WooCommerce Extended Coupon Features?"
-msgstr "Aimez-vous WooCommerce Extended Coupon Features?"
+msgid "Do you like Extended Coupon Features for WooCommerce?"
+msgstr "Aimez-vous Extended Coupon Features for WooCommerce?"
 
 #: includes/plugins/WJECF_Admin.php:159
 msgid "You will love the PRO version!"
@@ -415,8 +415,8 @@ msgid "Documentation"
 msgstr "Documentation"
 
 #: includes/plugins/WJECF_Admin.php:166
-msgid "WooCommerce Extended Coupon Features Documentation"
-msgstr "Documentation de WooCommerce Extended Coupon Features"
+msgid "Extended Coupon Features for WooCommerce Documentation"
+msgstr "Documentation de Extended Coupon Features for WooCommerce"
 
 #: includes/plugins/WJECF_Admin.php:179
 msgid "Matching products"
@@ -932,7 +932,7 @@ msgstr ""
 "article correspondant dans le panier."
 
 #. Name of the plugin
-msgid "WooCommerce Extended Coupon Features PRO"
+msgid "Extended Coupon Features for WooCommerce PRO"
 msgstr "WooCommerce Extended Coupon Caractéristiques PRO"
 
 #. Description of the plugin

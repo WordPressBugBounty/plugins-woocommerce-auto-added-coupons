@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WooCommerce auto added coupons package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WooCommerce Extended Coupon Features\n"
+"Project-Id-Version: Extended Coupon Features for WooCommerce\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/woocommerce-auto-"
 "added-coupons\n"
 "POT-Creation-Date: 2019-02-14 21:03+0100\n"
@@ -22,7 +22,7 @@ msgstr ""
 #: includes/abstract-wjecf-plugin.php:57
 #, php-format
 msgid ""
-"WooCommerce Extended Coupon Features version %1$s is required. You have "
+"Extended Coupon Features for WooCommerce version %1$s is required. You have "
 "version %2$s"
 msgstr ""
 
@@ -80,7 +80,7 @@ msgid "Sorry, it seems the coupon \"%s\" is not yours."
 msgstr "Lo sentimos, parece que el cupón \"%s\" no es tuyo."
 
 #: includes/plugins/WJECF_Admin.php:13
-msgid "Admin interface of WooCommerce Extended Coupon Features."
+msgid "Admin interface of Extended Coupon Features for WooCommerce."
 msgstr ""
 
 #: includes/plugins/WJECF_Admin.php:106
@@ -100,7 +100,7 @@ msgid "Miscellaneous"
 msgstr "Diversos"
 
 #: includes/plugins/WJECF_Admin.php:158
-msgid "Do you like WooCommerce Extended Coupon Features?"
+msgid "Do you like Extended Coupon Features for WooCommerce?"
 msgstr ""
 
 #: includes/plugins/WJECF_Admin.php:159
@@ -116,8 +116,8 @@ msgid "Documentation"
 msgstr "Documentación"
 
 #: includes/plugins/WJECF_Admin.php:166
-msgid "WooCommerce Extended Coupon Features Documentation"
-msgstr "Documentación de WooCommerce Extended Coupon Features"
+msgid "Extended Coupon Features for WooCommerce Documentation"
+msgstr "Documentación de Extended Coupon Features for WooCommerce"
 
 #: includes/plugins/WJECF_Admin.php:179
 msgid "Matching products"
@@ -290,7 +290,7 @@ msgid "Data succesfully upgraded to the newest version."
 msgstr ""
 
 #: includes/plugins/WJECF_Admin_Settings.php:13
-msgid "Settings page of WooCommerce Extended Coupon Features."
+msgid "Settings page of Extended Coupon Features for WooCommerce."
 msgstr ""
 
 #: includes/plugins/WJECF_Admin_Settings.php:34
@@ -303,7 +303,7 @@ msgstr ""
 #: includes/plugins/WJECF_Admin_Settings.php:41
 #: includes/plugins/WJECF_Admin_Settings.php:42
 #: includes/plugins/WJECF_Admin_Settings.php:51
-msgid "WooCommerce Extended Coupon Features"
+msgid "Extended Coupon Features for WooCommerce"
 msgstr ""
 
 #: includes/plugins/WJECF_Admin_Settings.php:72
@@ -455,7 +455,7 @@ msgid "Discount applied: %s"
 msgstr "Descuento aplicado: %s"
 
 #: includes/plugins/WJECF_Debug.php:18
-msgid "Debugging methods for WooCommerce Extended Coupon Features."
+msgid "Debugging methods for Extended Coupon Features for WooCommerce."
 msgstr ""
 
 #: includes/plugins/WJECF_Debug.php:39
@@ -852,17 +852,17 @@ msgid ""
 msgstr ""
 
 #~ msgid ""
-#~ "WooCommerce Extended Coupon Features version %s is required. You have "
+#~ "Extended Coupon Features for WooCommerce version %s is required. You have "
 #~ "version %s"
 #~ msgstr ""
-#~ "Se requiere versión %s de WooCommerce Extended Coupon Features. Usted "
+#~ "Se requiere versión %s de Extended Coupon Features for WooCommerce. Usted "
 #~ "tiene versión %s."
 
 #~ msgid "Free shipping coupon"
 #~ msgstr "Cupón para envío gratis"
 
-#~ msgid "Do you find WooCommerce Extended Coupon Features useful?"
-#~ msgstr "Le gusta WooCommerce Extended Coupon Features?"
+#~ msgid "Do you find Extended Coupon Features for WooCommerce useful?"
+#~ msgstr "Le gusta Extended Coupon Features for WooCommerce?"
 
 #~ msgid "Express your gratitude"
 #~ msgstr "Exprese su gratitud"

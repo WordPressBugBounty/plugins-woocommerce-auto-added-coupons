@@ -10,7 +10,7 @@ if ( defined( 'ABSPATH' ) && ! class_exists( 'WJECF_Admin_Settings' ) ) {
 		public function __construct() {
 			$this->set_plugin_data(
 				array(
-					'description'     => __( 'Settings page of WooCommerce Extended Coupon Features.', 'woocommerce-jos-autocoupon' ),
+					'description'     => __( 'Settings page of Extended Coupon Features for WooCommerce.', 'woocommerce-jos-autocoupon' ),
 					'dependencies'    => array(),
 					'can_be_disabled' => false,
 				)
@@ -38,8 +38,8 @@ if ( defined( 'ABSPATH' ) && ! class_exists( 'WJECF_Admin_Settings' ) ) {
 
 		public function action_admin_menu() {
 			add_options_page(
-				__( 'WooCommerce Extended Coupon Features', 'woocommerce-jos-autocoupon' ),
-				__( 'WooCommerce Extended Coupon Features', 'woocommerce-jos-autocoupon' ),
+				__( 'Extended Coupon Features for WooCommerce', 'woocommerce-jos-autocoupon' ),
+				__( 'Extended Coupon Features for WooCommerce', 'woocommerce-jos-autocoupon' ),
 				'manage_options',
 				self::SETTINGS_PAGE,
 				array( $this, 'action_admin_config_page' )
@@ -48,7 +48,7 @@ if ( defined( 'ABSPATH' ) && ! class_exists( 'WJECF_Admin_Settings' ) ) {
 
 		public function action_admin_config_page() {
 			?>
-			<h2><?php _e( 'WooCommerce Extended Coupon Features', 'woocommerce-jos-autocoupon' ); ?></h2>
+			<h2><?php _e( 'Extended Coupon Features for WooCommerce', 'woocommerce-jos-autocoupon' ); ?></h2>
 			<form method="post" action="options.php"> 
 			<?php
 			settings_fields( self::SETTINGS_PAGE );
@@ -139,7 +139,7 @@ if ( defined( 'ABSPATH' ) && ! class_exists( 'WJECF_Admin_Settings' ) ) {
 		}
 
 		/**
-		 * The url to the WooCommerce Extended Coupon Features settings page
+		 * The url to the Extended Coupon Features for WooCommerce settings page
 		 *
 		 * @since 2.5.6
 		 * @return string

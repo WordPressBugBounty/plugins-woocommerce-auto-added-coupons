@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WooCommerce Extended Coupon Features 2.00\n"
+"Project-Id-Version: Extended Coupon Features for WooCommerce 2.00\n"
 "POT-Creation-Date: 2016-03-28 21:32+0200\n"
 "PO-Revision-Date: 2016-03-28 21:32+0200\n"
 "Last-Translator: \n"
@@ -17,8 +17,8 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 
 #: includes/admin/wjecf-admin.php:94
-msgid "Do you find WooCommerce Extended Coupon Features useful?"
-msgstr "Você achou o WooCommerce Extended Coupon Features útil?"
+msgid "Do you find Extended Coupon Features for WooCommerce useful?"
+msgstr "Você achou o Extended Coupon Features for WooCommerce útil?"
 
 #: includes/admin/wjecf-admin.php:96
 msgid "Express your gratitude"
@@ -33,8 +33,8 @@ msgid "Documentation"
 msgstr "Documentação"
 
 #: includes/admin/wjecf-admin.php:109
-msgid "WooCommerce Extended Coupon Features Documentation"
-msgstr "Documentação do WooCommerce Extended Coupon Features"
+msgid "Extended Coupon Features for WooCommerce Documentation"
+msgstr "Documentação do Extended Coupon Features for WooCommerce"
 
 #: includes/admin/wjecf-admin.php:117
 msgid "Products"
@@ -449,8 +449,8 @@ msgstr "Procutar por produto..."
 
 #: woocommerce-jos-autocoupon-pro.php:33
 msgid ""
-"WooCommerce Extended Coupon Features is disabled because WooCommerce could "
+"Extended Coupon Features for WooCommerce is disabled because WooCommerce could "
 "not be detected."
 msgstr ""
-"WooCommerce Extended Coupon Features está desabilitado pois não detectamos o "
+"Extended Coupon Features for WooCommerce está desabilitado pois não detectamos o "
 "Woocommerce."

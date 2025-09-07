@@ -1,14 +1,14 @@
 <?php
 /**
- * Plugin Name: WooCommerce Extended Coupon Features FREE
+ * Plugin Name: Extended Coupon Features for WooCommerce FREE
  * Plugin URI: http://www.soft79.nl
  * Description: Additional functionality for WooCommerce Coupons.
- * Version: 3.3.9
+ * Version: 3.4.0
  * Text Domain: woocommerce-jos-autocoupon
  * Author: Soft79
  * License: GPL2
  * WC requires at least: 5.0.0
- * WC tested up to: 9.4.2
+ * WC tested up to: 10.0.2
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 if ( ! defined( 'WJECF_VERSION' ) ) {
-	define( 'WJECF_VERSION', '3.3.9' );
+	define( 'WJECF_VERSION', '3.4.0' );
 }
 
 // NOTE: This file must be compatible with old PHP versions. All other files can be PHP 5.6+ .
@@ -61,9 +61,9 @@ if ( ! function_exists( 'wjecf_load_plugin_textdomain' ) ) {
 					throw new Exception( sprintf( $message, $req['program'], $req['required_version'] ) );
 				}
 				if ( version_compare( $req['current_version'], $req['required_version'], '<' ) ) {
-					/* translators: 1: program 2: version 3: version of WooCommerce Extended Coupon Features */
+					/* translators: 1: program 2: version 3: version of Extended Coupon Features for WooCommerce */
 					$message = __(
-						'This plugin requires %1$s version %2$s or higher. You are running version %3$s. Please update %1$s or install a version of WooCommerce Extended Coupon Features prior to %4$s.',
+						'This plugin requires %1$s version %2$s or higher. You are running version %3$s. Please update %1$s or install a version of Extended Coupon Features for WooCommerce prior to %4$s.',
 						'woocommerce-jos-autocoupon'
 					);
 					throw new Exception(
@@ -72,7 +72,7 @@ if ( ! function_exists( 'wjecf_load_plugin_textdomain' ) ) {
 				}
 			}
 
-			// Here we load WooCommerce Extended Coupon Features.
+			// Here we load Extended Coupon Features for WooCommerce.
 			require_once 'includes/class-wjecf-bootstrap.php';
 			WJECF_Bootstrap::execute();
 		} catch ( Exception $ex ) {
@@ -96,7 +96,7 @@ if ( ! function_exists( 'wjecf_admin_notices' ) ) {
 		error_log( 'WJECF: ' . $GLOBALS['wjecf_admin_notice'] );
 
 		echo '<div class="notice error">';
-		echo '<p><strong>WooCommerce Extended Coupon Features</strong> &#8211; ';
+		echo '<p><strong>Extended Coupon Features for WooCommerce</strong> &#8211; ';
 		echo $GLOBALS['wjecf_admin_notice'];
 		echo '</div>';
 	}

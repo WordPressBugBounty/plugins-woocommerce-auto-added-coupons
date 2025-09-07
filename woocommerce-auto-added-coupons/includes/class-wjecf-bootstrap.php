@@ -102,7 +102,7 @@ class WJECF_Bootstrap {
 		}
 
 		/**
-		 * Get the instance if the WooCommerce Extended Coupon Features API
+		 * Get the instance if the Extended Coupon Features for WooCommerce API
 		 * @return WJECF_Pro_API The API object
 		 */
 		function wjecf_api() {

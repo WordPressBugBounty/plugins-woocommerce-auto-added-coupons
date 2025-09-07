@@ -10,7 +10,7 @@ if ( defined( 'ABSPATH' ) && ! class_exists( 'WJECF_Admin' ) ) {
 		public function __construct() {
 			$this->set_plugin_data(
 				array(
-					'description'     => __( 'Admin interface of WooCommerce Extended Coupon Features.', 'woocommerce-jos-autocoupon' ),
+					'description'     => __( 'Admin interface of Extended Coupon Features for WooCommerce.', 'woocommerce-jos-autocoupon' ),
 					'dependencies'    => array(),
 					'can_be_disabled' => false,
 				)
@@ -74,7 +74,7 @@ if ( defined( 'ABSPATH' ) && ! class_exists( 'WJECF_Admin' ) ) {
 				// 	echo esc_html_e( 'Dismiss', 'woocommerce' );
 				// 	echo '</a>';
 				// }
-				echo '<p><strong>WooCommerce Extended Coupon Features</strong> &#8211; ';
+				echo '<p><strong>Extended Coupon Features for WooCommerce</strong> &#8211; ';
 				echo $notice['html'];
 				echo '</div>';
 			}
@@ -155,7 +155,7 @@ if ( defined( 'ABSPATH' ) && ! class_exists( 'WJECF_Admin' ) ) {
 			if ( ! WJECF()->is_pro() ) {
 				$documentation_url = self::URL_DOCUMENTATION;
 
-				echo '<h3>' . __( 'Do you like WooCommerce Extended Coupon Features?', 'woocommerce-jos-autocoupon' ) . '</h3>';
+				echo '<h3>' . __( 'Do you like Extended Coupon Features for WooCommerce?', 'woocommerce-jos-autocoupon' ) . '</h3>';
 				echo '<p>' . esc_html( __( 'You will love the PRO version!', 'woocommerce-jos-autocoupon' ) ) . '</p>';
 				echo '<a id="wjecf_pro_button" href="' . self::URL_PURCHASE_PRO . '" target="_blank" class="button button-primary">';
 				echo esc_html( __( 'Get the PRO version', 'woocommerce-jos-autocoupon' ) );
@@ -163,7 +163,7 @@ if ( defined( 'ABSPATH' ) && ! class_exists( 'WJECF_Admin' ) ) {
 			}
 			echo '<h3>' . __( 'Documentation', 'woocommerce-jos-autocoupon' ) . '</h3>';
 			echo '<p><a href="' . $documentation_url . '" target="_blank">' .
-			__( 'WooCommerce Extended Coupon Features Documentation', 'woocommerce-jos-autocoupon' ) . '</a></p>';
+			__( 'Extended Coupon Features for WooCommerce Documentation', 'woocommerce-jos-autocoupon' ) . '</a></p>';
 		}
 
 		// //Tab 'extended features'

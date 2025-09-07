@@ -1,10 +1,10 @@
-=== WooCommerce Extended Coupon Features FREE ===
+=== Extended Coupon Features for WooCommerce FREE ===
 Contributors: josk79
 Tags: woocommerce, coupons, discount
 Requires at least: 5.0
 Requires PHP: 7.0
-Tested up to: 6.7.1
-Stable tag: 3.3.9
+Tested up to: 6.8.2
+Stable tag: 3.4.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,7 +12,7 @@ Additional functionality for WooCommerce Coupons: Allow discounts to be automati
 
 == Description ==
 
-"WooCommerce Extended Coupon Features" adds functionality to the WooCommerce coupons and allows for automatic discount rules. 
+"Extended Coupon Features for WooCommerce" adds functionality to the WooCommerce coupons and allows for automatic discount rules. 
 Very easy to use, the functionality is conveniently integrated to the WooCommerce Edit Coupon panel.
 
 Requires:
@@ -85,11 +85,11 @@ An empty cart can not have any coupons. The PRO version of this plugin has a wor
 
 = The cart is not updated after changing the payment method =
 
-On the settings page (Settings > WooCommerce Extended Coupon Features) check the box *Update order review on payment method change*.
+On the settings page (Settings > Extended Coupon Features for WooCommerce) check the box *Update order review on payment method change*.
 
 = The cart is not updated after changing the billing email address =
 
-On the settings page (Settings > WooCommerce Extended Coupon Features) check the box *Update order review on billing email change*.
+On the settings page (Settings > Extended Coupon Features for WooCommerce) check the box *Update order review on billing email change*.
 
 
 == Screenshots ==
@@ -100,6 +100,11 @@ On the settings page (Settings > WooCommerce Extended Coupon Features) check the
 4. Additional restrictions based on shipping or payment method or the customer
 
 == Changelog ==
+
+= 3.4.0 =
+*Release Date - 2025-09-07*
+- (PRO) FIX: Compatibility issue between Free products and 'Advanced Product Fields Pro for WooCommerce'
+- Rename plugin to comply with WooCommerce trademark guidelines
 
 = 3.3.9 =
 *Release Date - 2025-05-13*
@@ -527,7 +532,7 @@ On the settings page (Settings > WooCommerce Extended Coupon Features) check the
 * INTERNAL: Renamed meta_key woocommerce-jos-autocoupon to _wjecf_is_auto_coupon
 
 = 2.0.0 =
-* RENAME: Renamed plugin from "WooCommerce auto added coupons" to "WooCommerce Extended Coupon Features"
+* RENAME: Renamed plugin from "WooCommerce auto added coupons" to "Extended Coupon Features for WooCommerce"
 * FEATURE: Restrict coupons by payment method
 * FEATURE: Restrict coupons by shipping method	
 * FEATURE: Use AND-operator for the selected products (default is OR)

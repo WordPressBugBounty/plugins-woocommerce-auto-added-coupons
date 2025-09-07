@@ -55,7 +55,7 @@ abstract class Abstract_WJECF_Plugin {
 	protected function assert_wjecf_version( $required_version ) {
 		if ( version_compare( WJECF()->plugin_version(), $required_version, '<' ) ) {
 			/* translators: 1: required version 2: current version */
-			throw new Exception( sprintf( __( 'WooCommerce Extended Coupon Features version %1$s is required. You have version %2$s', 'woocommerce-jos-autocoupon' ), $required_version, WJECF()->plugin_version() ) );
+			throw new Exception( sprintf( __( 'Extended Coupon Features for WooCommerce version %1$s is required. You have version %2$s', 'woocommerce-jos-autocoupon' ), $required_version, WJECF()->plugin_version() ) );
 		}
 	}
 

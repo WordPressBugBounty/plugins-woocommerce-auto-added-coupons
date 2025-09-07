@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: WooCommerce Extended Coupon Features 2.00\n"
+"Project-Id-Version: Extended Coupon Features for WooCommerce 2.00\n"
 "POT-Creation-Date: 2023-08-14 15:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
@@ -56,7 +56,7 @@ msgid "Additional functionality for WooCommerce Coupons."
 msgstr ""
 
 #: includes/plugins/WJECF_Admin.php:13
-msgid "Admin interface of WooCommerce Extended Coupon Features."
+msgid "Admin interface of Extended Coupon Features for WooCommerce."
 msgstr ""
 
 #: pro/plugins/WJECF_Pro_Product_Filter.php:13
@@ -285,7 +285,7 @@ msgid "Debug mode is enabled. Please disable it when you're done debugging."
 msgstr ""
 
 #: includes/plugins/WJECF_Debug.php:18
-msgid "Debugging methods for WooCommerce Extended Coupon Features."
+msgid "Debugging methods for Extended Coupon Features for WooCommerce."
 msgstr ""
 
 #: includes/plugins/WJECF_Admin_Settings.php:111
@@ -307,7 +307,7 @@ msgid "Discount on cart with excluded products"
 msgstr ""
 
 #: includes/plugins/WJECF_Admin.php:158
-msgid "Do you like WooCommerce Extended Coupon Features?"
+msgid "Do you like Extended Coupon Features for WooCommerce?"
 msgstr ""
 
 #: includes/plugins/WJECF_Admin.php:164
@@ -606,7 +606,7 @@ msgid "Products Operator"
 msgstr ""
 
 #: includes/plugins/WJECF_Admin_Settings.php:13
-msgid "Settings page of WooCommerce Extended Coupon Features."
+msgid "Settings page of Extended Coupon Features for WooCommerce."
 msgstr ""
 
 #: includes/plugins/WJECF_Admin.php:326
@@ -720,7 +720,7 @@ msgstr ""
 msgid "This option is not available if you purchased from Envato market."
 msgstr ""
 
-#. 1: program 2: version 3: version of WooCommerce Extended Coupon Features
+#. 1: program 2: version 3: version of Extended Coupon Features for WooCommerce
 #: woocommerce-jos-autocoupon-pro.php:67
 #, php-format
 msgid ""
@@ -809,22 +809,22 @@ msgstr ""
 #: includes/plugins/WJECF_Admin_Settings.php:41
 #: includes/plugins/WJECF_Admin_Settings.php:42
 #: includes/plugins/WJECF_Admin_Settings.php:51
-msgid "WooCommerce Extended Coupon Features"
+msgid "Extended Coupon Features for WooCommerce"
 msgstr ""
 
 #: includes/plugins/WJECF_Admin.php:166
-msgid "WooCommerce Extended Coupon Features Documentation"
+msgid "Extended Coupon Features for WooCommerce Documentation"
 msgstr ""
 
 #. Name of the plugin
-msgid "WooCommerce Extended Coupon Features PRO"
+msgid "Extended Coupon Features for WooCommerce PRO"
 msgstr ""
 
 #. 1: required version 2: current version
 #: includes/abstract-wjecf-plugin.php:58
 #, php-format
 msgid ""
-"WooCommerce Extended Coupon Features version %1$s is required. You have "
+"Extended Coupon Features for WooCommerce version %1$s is required. You have "
 "version %2$s"
 msgstr ""
 

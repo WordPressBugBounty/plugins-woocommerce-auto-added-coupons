@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WooCommerce auto added coupons package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WooCommerce Extended Coupon Features\n"
+"Project-Id-Version: Extended Coupon Features for WooCommerce\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/woocommerce-auto-"
 "added-coupons\n"
 "POT-Creation-Date: 2019-02-14 21:03+0100\n"
@@ -59,8 +59,8 @@ msgid "Additional functionality for WooCommerce Coupons."
 msgstr "Toegevoegde functionaliteit voor WooCommerce Coupons"
 
 #: includes/plugins/WJECF_Admin.php:13
-msgid "Admin interface of WooCommerce Extended Coupon Features."
-msgstr "Admin-interface van WooCommerce Extended Coupon Features."
+msgid "Admin interface of Extended Coupon Features for WooCommerce."
+msgstr "Admin-interface van Extended Coupon Features for WooCommerce."
 
 #: pro/plugins/WJECF_Pro_Product_Filter.php:13
 msgid "Advanced matching queries for products."
@@ -316,8 +316,8 @@ msgstr ""
 "debuggen."
 
 #: includes/plugins/WJECF_Debug.php:18
-msgid "Debugging methods for WooCommerce Extended Coupon Features."
-msgstr "Debug-methoden voor WooCommerce Extended Coupon Features."
+msgid "Debugging methods for Extended Coupon Features for WooCommerce."
+msgstr "Debug-methoden voor Extended Coupon Features for WooCommerce."
 
 #: includes/plugins/WJECF_Admin_Settings.php:111
 msgid "Disabled plugins"
@@ -338,8 +338,8 @@ msgid "Discount on cart with excluded products"
 msgstr "Korting op winkelmand met uitgesloten producten"
 
 #: includes/plugins/WJECF_Admin.php:158
-msgid "Do you like WooCommerce Extended Coupon Features?"
-msgstr "Vind je WooCommerce Extended Coupon Features leuk?"
+msgid "Do you like Extended Coupon Features for WooCommerce?"
+msgstr "Vind je Extended Coupon Features for WooCommerce leuk?"
 
 #: includes/plugins/WJECF_Admin.php:164
 msgid "Documentation"
@@ -679,8 +679,8 @@ msgid "Products Operator"
 msgstr "Producten operator"
 
 #: includes/plugins/WJECF_Admin_Settings.php:13
-msgid "Settings page of WooCommerce Extended Coupon Features."
-msgstr "Instellingen-pagina van WooCommerce Extended Coupon Features."
+msgid "Settings page of Extended Coupon Features for WooCommerce."
+msgstr "Instellingen-pagina van Extended Coupon Features for WooCommerce."
 
 #: includes/plugins/WJECF_Admin.php:326
 msgid "Shipping methods"
@@ -808,7 +808,7 @@ msgstr ""
 msgid "This option is not available if you purchased from Envato market."
 msgstr "Deze optie is niet beschikbaar voor aankopen van Envato market."
 
-#. 1: program 2: version 3: version of WooCommerce Extended Coupon Features
+#. 1: program 2: version 3: version of Extended Coupon Features for WooCommerce
 #: woocommerce-jos-autocoupon-pro.php:67
 #, php-format
 msgid ""
@@ -925,25 +925,25 @@ msgstr ""
 #: includes/plugins/WJECF_Admin_Settings.php:41
 #: includes/plugins/WJECF_Admin_Settings.php:42
 #: includes/plugins/WJECF_Admin_Settings.php:51
-msgid "WooCommerce Extended Coupon Features"
-msgstr "WooCommerce Extended Coupon Features"
+msgid "Extended Coupon Features for WooCommerce"
+msgstr "Extended Coupon Features for WooCommerce"
 
 #: includes/plugins/WJECF_Admin.php:166
-msgid "WooCommerce Extended Coupon Features Documentation"
-msgstr "WooCommerce Extended Coupon Features Documentatie"
+msgid "Extended Coupon Features for WooCommerce Documentation"
+msgstr "Extended Coupon Features for WooCommerce Documentatie"
 
 #. Name of the plugin
-msgid "WooCommerce Extended Coupon Features PRO"
-msgstr "WooCommerce Extended Coupon Features PRO"
+msgid "Extended Coupon Features for WooCommerce PRO"
+msgstr "Extended Coupon Features for WooCommerce PRO"
 
 #. 1: required version 2: current version
 #: includes/abstract-wjecf-plugin.php:58
 #, php-format
 msgid ""
-"WooCommerce Extended Coupon Features version %1$s is required. You have "
+"Extended Coupon Features for WooCommerce version %1$s is required. You have "
 "version %2$s"
 msgstr ""
-"WooCommerce Extended Coupon Features versie %1$s is vereist. Je hebt versie "
+"Extended Coupon Features for WooCommerce versie %1$s is vereist. Je hebt versie "
 "%2$s"
 
 #. 1:url

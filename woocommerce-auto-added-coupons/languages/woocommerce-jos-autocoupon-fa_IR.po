@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WooCommerce Extended Coupon Features 2.00\n"
+"Project-Id-Version: Extended Coupon Features for WooCommerce 2.00\n"
 "POT-Creation-Date: 2018-02-03 15:25+0100\n"
 "PO-Revision-Date: 2018-02-03 15:26+0100\n"
 "Last-Translator: \n"
@@ -19,7 +19,7 @@ msgstr ""
 #: includes/Abstract_WJECF_Plugin.php:49
 #, php-format
 msgid ""
-"WooCommerce Extended Coupon Features version %s is required. You have "
+"Extended Coupon Features for WooCommerce version %s is required. You have "
 "version %s"
 msgstr ""
 
@@ -106,10 +106,10 @@ msgstr "درصد اعمال تخفیف: %s"
 #: includes/WJECF_Controller.php:238
 #, fuzzy
 msgid ""
-"WooCommerce Extended Coupon Features is disabled because WooCommerce could "
+"Extended Coupon Features for WooCommerce is disabled because WooCommerce could "
 "not be detected."
 msgstr ""
-"افزونه WooCommerce Extended Coupon Features غیر فعال شده است زیرا ووکامروس "
+"افزونه Extended Coupon Features for WooCommerce غیر فعال شده است زیرا ووکامروس "
 "نمی تواند آن را شناسایی کند."
 
 #: includes/WJECF_Controller.php:253
@@ -151,7 +151,7 @@ msgid "Sorry, coupon \"%s\" is only valid on your first purchase."
 msgstr ""
 
 #: includes/WJECF_Debug.php:16
-msgid "Debugging methods for WooCommerce Extended Coupon Features."
+msgid "Debugging methods for Extended Coupon Features for WooCommerce."
 msgstr ""
 
 #: includes/WJECF_Debug.php:34
@@ -179,12 +179,12 @@ msgid "Compatiblity with WPML."
 msgstr ""
 
 #: includes/admin/WJECF_Admin.php:11
-msgid "Admin interface of WooCommerce Extended Coupon Features."
+msgid "Admin interface of Extended Coupon Features for WooCommerce."
 msgstr ""
 
 #: includes/admin/WJECF_Admin.php:22
 msgid ""
-"<strong>WooCommerce Extended Coupon Features:</strong> You are using an old "
+"<strong>Extended Coupon Features for WooCommerce:</strong> You are using an old "
 "version of WooCommerce. Updating of WooCommerce is recommended as using an "
 "outdated version might cause unexpected behaviour in combination with modern "
 "plugins."
@@ -207,7 +207,7 @@ msgid "Miscellaneous"
 msgstr "متفرقه"
 
 #: includes/admin/WJECF_Admin.php:143
-msgid "Do you find WooCommerce Extended Coupon Features useful?"
+msgid "Do you find Extended Coupon Features for WooCommerce useful?"
 msgstr "آیا این افزونه برای شما مفید بوده است؟"
 
 #: includes/admin/WJECF_Admin.php:145
@@ -223,7 +223,7 @@ msgid "Documentation"
 msgstr "مستندات"
 
 #: includes/admin/WJECF_Admin.php:158
-msgid "WooCommerce Extended Coupon Features Documentation"
+msgid "Extended Coupon Features for WooCommerce Documentation"
 msgstr "مستندات افزونه"
 
 #: includes/admin/WJECF_Admin.php:172
@@ -408,12 +408,12 @@ msgid "Any customer"
 msgstr "همه مشتری ها"
 
 #: includes/admin/WJECF_Admin_Settings.php:16
-msgid "Settings page of WooCommerce Extended Coupon Features."
+msgid "Settings page of Extended Coupon Features for WooCommerce."
 msgstr ""
 
 #: includes/admin/WJECF_Admin_Settings.php:30
 #: includes/admin/WJECF_Admin_Settings.php:35
-msgid "WooCommerce Extended Coupon Features"
+msgid "Extended Coupon Features for WooCommerce"
 msgstr ""
 
 #: includes/admin/WJECF_Admin_Settings.php:56

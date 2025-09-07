@@ -3,7 +3,7 @@
 defined( 'ABSPATH' ) or die();
 
 /**
- * The main controller for WooCommerce Extended Coupon Features
+ * The main controller for Extended Coupon Features for WooCommerce
  */
 class WJECF_Controller {
 

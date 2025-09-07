@@ -15,7 +15,7 @@ if ( defined( 'ABSPATH' ) && ! class_exists( 'WJECF_Debug' ) ) {
 		public function __construct() {
 			$this->set_plugin_data(
 				array(
-					'description'     => __( 'Debugging methods for WooCommerce Extended Coupon Features.', 'woocommerce-jos-autocoupon' ),
+					'description'     => __( 'Debugging methods for Extended Coupon Features for WooCommerce.', 'woocommerce-jos-autocoupon' ),
 					'dependencies'    => array(),
 					'can_be_disabled' => false,
 					'hidden'          => false,
@@ -235,10 +235,10 @@ if ( defined( 'ABSPATH' ) && ! class_exists( 'WJECF_Debug' ) ) {
 			//Since WC2.7. Note: Might not have be loaded yet when calling this method, so always test if it exists
 			if ( function_exists( 'wc_get_logger' ) ) {
 				$logger  = wc_get_logger();
-				$context = array( 'source' => 'WooCommerce Extended Coupon Features' );
+				$context = array( 'source' => 'Extended Coupon Features for WooCommerce' );
 				$logger->log( $level, $nice_str, $context );
 				if ( 'debug' !== $level ) {
-					error_log( 'WooCommerce Extended Coupon Features ' . $level . ': ' . $row['message'] );
+					error_log( 'Extended Coupon Features for WooCommerce ' . $level . ': ' . $row['message'] );
 				}
 			} else {
 				//Legacy

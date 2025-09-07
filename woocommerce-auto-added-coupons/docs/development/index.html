@@ -40,7 +40,7 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption"><span class="caption-text">WooCommerce Extended Coupon Features</span></p>
+              <p class="caption"><span class="caption-text">Extended Coupon Features for WooCommerce</span></p>
               <ul class="current">
                   <li class="toctree-l1"><a class="reference internal" href="..">About</a>
                   </li>
@@ -87,7 +87,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-          <li class="breadcrumb-item">WooCommerce Extended Coupon Features</li>
+          <li class="breadcrumb-item">Extended Coupon Features for WooCommerce</li>
       <li class="breadcrumb-item active">Development</li>
     <li class="wy-breadcrumbs-aside">
     </li>
@@ -99,7 +99,7 @@
               
                 <h1 id="development">Development</h1>
 <h2 id="filters-and-actions">Filters and Actions</h2>
-<p>These filters are called by WooCommerce Extended Coupon Features:</p>
+<p>These filters are called by Extended Coupon Features for WooCommerce:</p>
 <pre><code class="language-php">apply_filters( 'wjecf_apply_with_other_coupons', true, $the_coupon, $applied_coupon_codes ) );
 apply_filters( 'wjecf_bogo_product_amount_for_coupon', $qty, $coupon );
 apply_filters( 'wjecf_bogo_products_to_apply_for_coupon', $bogos, $coupon );
@@ -117,7 +117,7 @@ apply_filters( 'wjecf_is_first_purchase', $is_first_purchase );
 apply_filters( 'wjecf_set_free_product_amount_in_cart', $quantity, $product );
 apply_filters( 'wjecf_set_free_product_amount_in_cart', $quantity, $product, $variation )
 </code></pre>
-<p>These actions are called by WooCommerce Extended Coupon Features:</p>
+<p>These actions are called by Extended Coupon Features for WooCommerce:</p>
 <pre><code class="language-php">do_action( 'wjecf_admin_after_settings' );
 do_action( 'wjecf_admin_before_settings' );
 do_action( 'wjecf_after_update_matched_autocoupons' );
@@ -146,9 +146,9 @@ do_action( 'wjecf_woocommerce_coupon_options_extended_features', $thepostid, $po
   Discount-quantity of cart_items that are not in the array will not be limited.</li>
 </ul>
 <h2 id="create-mini-plugins-for-extended-coupon-features">Create mini-plugins for Extended Coupon Features</h2>
-<p>You can further extend functionality of WooCommerce Extended Coupon Features by creating your own mini-plugins.</p>
+<p>You can further extend functionality of Extended Coupon Features for WooCommerce by creating your own mini-plugins.</p>
 <ol>
-<li>Hook into the <code>wjecf_init_plugins</code>-action. (Using this hook guarantees that the WooCommerce and WooCommerce Extended Coupon Features plugins are loaded)</li>
+<li>Hook into the <code>wjecf_init_plugins</code>-action. (Using this hook guarantees that the WooCommerce and Extended Coupon Features for WooCommerce plugins are loaded)</li>
 <li>Here, create a class that extends <code>Abstract_WJECF_Plugin</code>.</li>
 <li>Create a constructor <code>__construct()</code>, where you setup the plugin data by calling <code>$this-&gt;set_plugin_data</code></li>
 <li>Create a function <code>init_hook()</code>, where you setup your plugin and define frontend hooks.</li>
@@ -169,7 +169,7 @@ e.g. <code>'int'</code>, <code>'int[]'</code>, <code>'yesno'</code>, <code>'deci
 <pre><code class="language-php">&lt;?php
 /**
 Plugin Name: WJECF Example plugin - Allow a coupon on certain weekdays only
-Description: An example on how to extend WooCommerce Extended Coupon Features
+Description: An example on how to extend Extended Coupon Features for WooCommerce
 Author: Soft79
 Version: 1.0
 Author URI: http://www.soft79.nl/
