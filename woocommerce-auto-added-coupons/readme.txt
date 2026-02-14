@@ -3,8 +3,8 @@ Contributors: josk79
 Tags: woocommerce, coupons, discount
 Requires at least: 5.0
 Requires PHP: 7.0
-Tested up to: 6.8.2
-Stable tag: 3.4.0
+Tested up to: 6.9.1
+Stable tag: 3.4.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,9 +16,9 @@ Additional functionality for WooCommerce Coupons: Allow discounts to be automati
 Very easy to use, the functionality is conveniently integrated to the WooCommerce Edit Coupon panel.
 
 Requires:
-* WooCommerce 5.0 or newer (6.0+ recommended)
-* PHP 7.0 or newer (7.2+ Recommended)
-* WordPress 5.0 or newer
+* WordPress 5.0 or newer (6.8+ recommended)
+* WooCommerce 5.0 or newer (9.0+ recommended)
+* PHP 7.0 or newer (8.2+ recommended)
 
 Full documentation is available at [www.soft79.nl](http://www.soft79.nl/documentation/wjecf).
 
@@ -100,6 +100,15 @@ On the settings page (Settings > Extended Coupon Features for WooCommerce) check
 4. Additional restrictions based on shipping or payment method or the customer
 
 == Changelog ==
+
+= 3.4.2 =
+*Release Date - 2026-02-14*
+- Improve get_all_auto_coupons performance (thanks, migueldamota)
+- Code cleanup
+
+= 3.4.1 =
+*Release Date - 2025-10-12*
+- (PRO) Change license server to lic.soft79.nl
 
 = 3.4.0 =
 *Release Date - 2025-09-07*

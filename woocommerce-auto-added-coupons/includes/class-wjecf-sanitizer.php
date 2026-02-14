@@ -1,75 +1,81 @@
 <?php
 
-class WJECF_Sanitizer {
+class WJECF_Sanitizer
+{
+    protected static $_instance;
 
+    /**
+     * Singleton Instance.
+     *
+     * @static
+     *
+     * @return Singleton Instance
+     */
+    public static function instance()
+    {
+        if (is_null(self::$_instance)) {
+            self::$_instance = new self();
+        }
 
-	/**
-	 * Singleton Instance
-	 *
-	 * @static
-	 * @return Singleton Instance
-	 */
-	public static function instance() {
-		if ( is_null( self::$_instance ) ) {
-			self::$_instance = new self();
-		}
-		return self::$_instance;
-	}
-	protected static $_instance = null;
+        return self::$_instance;
+    }
 
-	/**
-	 * Sanitizes form input for database output
-	 *
-	 * @param mixed $value
-	 * @param string $requested_format The output format requested
-	 * @param mixed|null $fallback_value Value to return in case of invalid value
-	 * @return mixed Sanitized
-	 */
-	public function sanitize( $value, $requested_format, $fallback_value = null ) {
+    /**
+     * Sanitizes form input for database output.
+     *
+     * @param mixed      $value
+     * @param string     $requested_format The output format requested
+     * @param null|mixed $fallback_value   Value to return in case of invalid value
+     *
+     * @return mixed Sanitized
+     */
+    public function sanitize($value, $requested_format, $fallback_value = null)
+    {
+        switch ($requested_format) {
+            case '':
+                return (string) $value;
 
-		switch ( $requested_format ) {
-			case '':
-				return (string) $value;
+            case 'html':
+                return wp_kses_post($value);
 
-			case 'html':
-				return wp_kses_post( $value );
+            case 'clean':
+                // applies sanitize_text_field; or recursively if it's an array
+                return wc_clean($value);
 
-			case 'clean':
-				//applies sanitize_text_field; or recursively if it's an array
-				return wc_clean( $value );
+            case 'int,':
+            case 'int[]':
+                if (is_array($value)) {
+                    $values = $value;
+                } elseif ('' === $value || is_null($value) || false === $value) {
+                    $values = [];
+                } else {
+                    $values = explode(',', $value); // int[] also accepts comma separated string
+                }
+                $retval = [];
+                foreach ($values as $value) {
+                    $sane = $this->sanitize($value, 'int');
+                    if (!is_null($sane)) {
+                        $retval[] = $sane;
+                    }
+                }
+                if ('int,' === $requested_format) {
+                    return implode(',', $retval);
+                }
 
-			case 'int,':
-			case 'int[]':
-				if ( is_array( $value ) ) {
-					$values = $value;
-				} elseif ( '' === $value || is_null( $value ) || false === $value ) {
-					$values = array();
-				} else {
-					$values = explode( ',', $value ); // int[] also accepts comma separated string
-				}
-				$retval = array();
-				foreach ( $values as $value ) {
-					$sane = $this->sanitize( $value, 'int' );
-					if ( ! is_null( $sane ) ) {
-						$retval[] = $sane;
-					}
-				}
-				if ( 'int,' === $requested_format ) {
-					return implode( ',', $retval );
-				}
-				return $retval;
+                return $retval;
 
-			case 'int':
-				return is_numeric( $value ) ? intval( $value ) : $fallback_value;
+            case 'int':
+                return is_numeric($value) ? intval($value) : $fallback_value;
 
-			case 'yesno':
-				return 'yes' === $value ? 'yes' : 'no';
+            case 'yesno':
+                return 'yes' === $value ? 'yes' : 'no';
 
-			case 'decimal':
-				$value = wc_format_decimal( $value );
-				return ( '' === $value || false === $value ) ? $fallback_value : $value;
-		}
+            case 'decimal':
+                $value = wc_format_decimal($value);
 
-		throw new Exception( 'Unknown sanitization rule ' . $requested_format );
-	}
+                return ('' === $value || false === $value) ? $fallback_value : $value;
+        }
+
+        throw new Exception('Unknown sanitization rule '.$requested_format);
+    }
 }

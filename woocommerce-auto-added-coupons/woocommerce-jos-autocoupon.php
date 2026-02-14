@@ -3,108 +3,114 @@
  * Plugin Name: Extended Coupon Features for WooCommerce FREE
  * Plugin URI: http://www.soft79.nl
  * Description: Additional functionality for WooCommerce Coupons.
- * Version: 3.4.0
+ * Version: 3.4.2
  * Text Domain: woocommerce-jos-autocoupon
  * Author: Soft79
  * License: GPL2
  * WC requires at least: 5.0.0
- * WC tested up to: 10.0.2
+ * WC tested up to: 10.5.1.
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	die();
+use Automattic\WooCommerce\Utilities\FeaturesUtil;
+
+if (!defined('ABSPATH')) {
+    exit;
 }
 
-if ( ! defined( 'WJECF_VERSION' ) ) {
-	define( 'WJECF_VERSION', '3.4.0' );
+if (!defined('WJECF_VERSION')) {
+    define('WJECF_VERSION', '3.4.2');
 }
 
 // NOTE: This file must be compatible with old PHP versions. All other files can be PHP 5.6+ .
-if ( ! function_exists( 'wjecf_load_plugin_textdomain' ) ) {
-	add_action( 'init', 'wjecf_load_plugin_textdomain' );
-	add_action( 'init', 'wjecf_action_plugins_loaded' );
+if (!function_exists('wjecf_load_plugin_textdomain')) {
+    add_action('init', 'wjecf_load_plugin_textdomain');
+    add_action('init', 'wjecf_action_plugins_loaded');
 
-	// We must define wjecf_load_plugin_textdomain() so that versions prior to 3.0 detect this plugin instance.
-	function wjecf_load_plugin_textdomain() {
-		$locale = apply_filters( 'plugin_locale', get_locale(), 'woocommerce' );
-		load_textdomain(
-			'woocommerce-jos-autocoupon',
-			WP_LANG_DIR . '/woocommerce-jos-autocoupon/woocommerce-jos-autocoupon-' . $locale . '.mo'
-		);
-		load_plugin_textdomain( 'woocommerce-jos-autocoupon', false, basename( dirname( __FILE__ ) ) . '/languages/' );
-	}
+    // We must define wjecf_load_plugin_textdomain() so that versions prior to 3.0 detect this plugin instance.
+    function wjecf_load_plugin_textdomain()
+    {
+        $locale = apply_filters('plugin_locale', get_locale(), 'woocommerce');
+        load_textdomain(
+            'woocommerce-jos-autocoupon',
+            WP_LANG_DIR.'/woocommerce-jos-autocoupon/woocommerce-jos-autocoupon-'.$locale.'.mo',
+        );
+        load_plugin_textdomain('woocommerce-jos-autocoupon', false, basename(dirname(__FILE__)).'/languages/');
+    }
 
-	function wjecf_action_plugins_loaded() {
-		try {
-			$requirements = array(
-				array(
-					'program'          => 'PHP',
-					'required_version' => '7.0',
-					'current_version'  => phpversion(),
-				),
-				array(
-					'program'          => 'WooCommerce',
-					'required_version' => '5.0',
-					'current_version'  => is_callable( 'wc' ) && isset( wc()->version ) ? wc()->version : null,
-				),
-				array(
-					'program'          => 'WordPress',
-					'required_version' => '4.9',
-					'current_version'  => $GLOBALS['wp_version'],
-				),
-			);
+    function wjecf_action_plugins_loaded()
+    {
+        try {
+            $requirements = [
+                [
+                    'program' => 'PHP',
+                    'required_version' => '7.0',
+                    'current_version' => phpversion(),
+                ],
+                [
+                    'program' => 'WooCommerce',
+                    'required_version' => '5.0',
+                    'current_version' => is_callable('wc') && isset(wc()->version) ? wc()->version : null,
+                ],
+                [
+                    'program' => 'WordPress',
+                    'required_version' => '4.9',
+                    'current_version' => $GLOBALS['wp_version'],
+                ],
+            ];
 
-			foreach ( $requirements as $req ) {
-				if ( ! $req['current_version'] ) {
-					/* translators: 1: program 2: version */
-					$message = __( 'This plugin requires %1$s, please install it.', 'woocommerce-jos-autocoupon' );
-					throw new Exception( sprintf( $message, $req['program'], $req['required_version'] ) );
-				}
-				if ( version_compare( $req['current_version'], $req['required_version'], '<' ) ) {
-					/* translators: 1: program 2: version 3: version of Extended Coupon Features for WooCommerce */
-					$message = __(
-						'This plugin requires %1$s version %2$s or higher. You are running version %3$s. Please update %1$s or install a version of Extended Coupon Features for WooCommerce prior to %4$s.',
-						'woocommerce-jos-autocoupon'
-					);
-					throw new Exception(
-						sprintf( $message, $req['program'], $req['required_version'], $req['current_version'], '3.0' )
-					);
-				}
-			}
+            foreach ($requirements as $req) {
+                if (!$req['current_version']) {
+                    // translators: 1: program 2: version
+                    $message = __('This plugin requires %1$s, please install it.', 'woocommerce-jos-autocoupon');
 
-			// Here we load Extended Coupon Features for WooCommerce.
-			require_once 'includes/class-wjecf-bootstrap.php';
-			WJECF_Bootstrap::execute();
-		} catch ( Exception $ex ) {
-			$GLOBALS['wjecf_admin_notice'] = $ex->getMessage();
-			add_action( 'admin_notices', 'wjecf_admin_notices' );
-		}
-	}
+                    throw new Exception(sprintf($message, $req['program'], $req['required_version']));
+                }
+                if (version_compare($req['current_version'], $req['required_version'], '<')) {
+                    // translators: 1: program 2: version 3: version of Extended Coupon Features for WooCommerce
+                    $message = __(
+                        'This plugin requires %1$s version %2$s or higher. You are running version %3$s. Please update %1$s or install a version of Extended Coupon Features for WooCommerce prior to %4$s.',
+                        'woocommerce-jos-autocoupon',
+                    );
+
+                    throw new Exception(
+                        sprintf($message, $req['program'], $req['required_version'], $req['current_version'], '3.0'),
+                    );
+                }
+            }
+
+            // Here we load Extended Coupon Features for WooCommerce.
+            require_once 'includes/class-wjecf-bootstrap.php';
+            WJECF_Bootstrap::execute();
+        } catch (Exception $ex) {
+            $GLOBALS['wjecf_admin_notice'] = $ex->getMessage();
+            add_action('admin_notices', 'wjecf_admin_notices');
+        }
+    }
 } else {
-	$GLOBALS['wjecf_admin_notice'] = __(
-		'Multiple instances of the plugin are detected. Please disable one of them.',
-		'woocommerce-jos-autocoupon'
-	);
-	add_action( 'admin_notices', 'wjecf_admin_notices' );
+    $GLOBALS['wjecf_admin_notice'] = __(
+        'Multiple instances of the plugin are detected. Please disable one of them.',
+        'woocommerce-jos-autocoupon',
+    );
+    add_action('admin_notices', 'wjecf_admin_notices');
 }
 
-if ( ! function_exists( 'wjecf_admin_notices' ) ) {
-	function wjecf_admin_notices() {
-		if ( ! isset( $GLOBALS['wjecf_admin_notice'] ) ) {
-			return;
-		}
-		error_log( 'WJECF: ' . $GLOBALS['wjecf_admin_notice'] );
+if (!function_exists('wjecf_admin_notices')) {
+    function wjecf_admin_notices()
+    {
+        if (!isset($GLOBALS['wjecf_admin_notice'])) {
+            return;
+        }
+        error_log('WJECF: '.$GLOBALS['wjecf_admin_notice']);
 
-		echo '<div class="notice error">';
-		echo '<p><strong>Extended Coupon Features for WooCommerce</strong> &#8211; ';
-		echo $GLOBALS['wjecf_admin_notice'];
-		echo '</div>';
-	}
+        echo '<div class="notice error">';
+        echo '<p><strong>Extended Coupon Features for WooCommerce</strong> &#8211; ';
+        echo $GLOBALS['wjecf_admin_notice'];
+        echo '</div>';
+    }
 }
 
-add_action( 'before_woocommerce_init', function() {
-	if ( class_exists( '\Automattic\WooCommerce\Utilities\FeaturesUtil' ) ) {
-		\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', __FILE__, true );
-	}
-} );
-
+add_action('before_woocommerce_init', function () {
+    if (class_exists('\Automattic\WooCommerce\Utilities\FeaturesUtil')) {
+        FeaturesUtil::declare_compatibility('custom_order_tables', __FILE__, true);
+    }
+});
